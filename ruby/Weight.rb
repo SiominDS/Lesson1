@@ -1,15 +1,15 @@
 class Weight
     def user_weight_check
-        puts "Enter your name: "
+        print "Enter your name: "
         name = gets
-        puts "Your weight: "
+        print "Your weight: "
         weight = gets.to_i
         weight_index = weight - 110
         if weight_index < 0
-          puts "Dear #{name}, Your weight is optimal"
+          print "Dear #{name}, Your weight is optimal"
           # Why does text after name start from new string?!
         else
-          puts  "Dear "+name+", You should visit gym more often"
+          print  "Dear "+name+", You should visit gym more often"
         end
      end
 end
